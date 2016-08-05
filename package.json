@@ -1,0 +1,32 @@
+{
+    "name": "leedian-jsdoc",
+    "version": "1.0.0",
+    "description": "gulp-jsdoc3 + jaguarjs-jsdoc template",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cainmaila/leedian-jsdoc.git"
+    },
+    "keywords": [
+    "gulp",
+    "jsdoc"
+  ],
+    "author": "",
+    "dependencies": {
+        "bluebird": "^3.1.1",
+        "debug": "^2.2.0",
+        "gulp-util": "^3.0.7",
+        "jaguarjs-jsdoc": "^1.0.0",
+        "jsdoc": "^3.4.0",
+        "map-stream": "0.0.6",
+        "tmp": "0.0.28"
+    },
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/cainmaila/leedian-jsdoc/issues"
+    },
+    "homepage": "https://github.com/cainmaila/leedian-jsdoc#readme"
+}
