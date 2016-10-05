@@ -81,7 +81,7 @@ function jsdoc(config, done) {
                     cmd = require.resolve('jsdoc/jsdoc.js'),
                     // Needed to handle npm3 - find the binary anywhere
                     // inkdocstrap = _path2.default.dirname(require.resolve('ink-docstrap'));
-                    inkdocstrap = "./node_modules/leedian-jsdoc/node_modules/jaguarjs-jsdoc";
+                    inkdocstrap = "./node_modules/leedian-jsdoc/jaguarjs-jsdoc";
                 var args = ['-c', tmpobj.name];
 
                 // Config + ink-docstrap if user did not specify their own layout or template
