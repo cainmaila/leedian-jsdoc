@@ -7,7 +7,8 @@
         "excludePattern": "(^|\\/|\\\\)_"
     },
     "opts": {
-        "recurse": true
+        "recurse": true,
+        "destination": "doc"
     },
     "templates": {
         "cleverLinks": true,

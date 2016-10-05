@@ -1,6 +1,6 @@
 {
     "name": "leedian-jsdoc",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "gulp-jsdoc3 + jaguarjs-jsdoc template",
     "main": "index.js",
     "scripts": {

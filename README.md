@@ -34,7 +34,8 @@ conf.json
         "excludePattern": "(^|\\/|\\\\)_"
     },
     "opts": {
-        "recurse": true
+        "recurse": true,
+        "destination": "doc"
     },
     "templates": {
         "cleverLinks": true,
@@ -50,10 +51,14 @@ conf.json
 ```
 gulpfile.js
 ```
+var gulp = require('gulp');
+var jsdoc = require('leedian-jsdoc');
+var jsdocSettings = require('./conf.json');
+
 gulp.task('default', function (cb) {
     var config = require('./conf.json');
     gulp.src(['./README.md', './*.js'], { read: false })
-        .pipe(jsdoc(config, cb));
+        .pipe(jsdoc(jsdocSettings, cb));
 });
 ```
 
