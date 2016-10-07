@@ -10,17 +10,6 @@ npm i leedian-jsdoc --save-dev
 
 ## Usage
 
-gulpfile.js
-```
-var gulp = require('gulp');
-var jsdoc = require('leedian-jsdoc');
-
-gulp.task('default', function (cb) {
-    gulp.src(['./README.md', './*.js'], { read: false })
-        .pipe(jsdoc(cb));
-});
-```
-
 You can also pass in your own config to override the defaults
 
 conf.json
@@ -53,12 +42,11 @@ gulpfile.js
 ```
 var gulp = require('gulp');
 var jsdoc = require('leedian-jsdoc');
-var jsdocSettings = require('./conf.json');
 
 gulp.task('default', function (cb) {
     var config = require('./conf.json');
     gulp.src(['./README.md', './*.js'], { read: false })
-        .pipe(jsdoc(jsdocSettings, cb));
+        .pipe(jsdoc(config, cb));
 });
 ```
 
